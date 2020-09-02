@@ -1,7 +1,7 @@
 /**
  * 版本
  */
-const version = '1.0.0';
+export const version: string = '1.0.0';
 
 /**
  * 格式化文件大小
@@ -9,7 +9,7 @@ const version = '1.0.0';
  * @param value 字节大小
  * @returns {string} 格式化的文件大小
  */
-const formatSize = (value) => {
+export const formatSize = (value: any): string => {
   if (!value) {
     return '0 Bytes';
   }
@@ -19,6 +19,3 @@ const formatSize = (value) => {
   const size = srcSize / Math.pow(1024, index);
   return size.toFixed(2) + unitArr[index];  // 保留的小数位数
 };
-
-export {version}
-export {formatSize}

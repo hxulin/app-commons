@@ -4,15 +4,14 @@ exports.formatSize = exports.version = void 0;
 /**
  * 版本
  */
-const version = '1.0.0';
-exports.version = version;
+exports.version = '1.0.0';
 /**
  * 格式化文件大小
  *
  * @param value 字节大小
  * @returns {string} 格式化的文件大小
  */
-const formatSize = (value) => {
+exports.formatSize = (value) => {
     if (!value) {
         return '0 Bytes';
     }
@@ -22,4 +21,3 @@ const formatSize = (value) => {
     const size = srcSize / Math.pow(1024, index);
     return size.toFixed(2) + unitArr[index]; // 保留的小数位数
 };
-exports.formatSize = formatSize;

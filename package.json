@@ -5,7 +5,7 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "scripts": {
-    "build": "bin/build"
+    "build": "node bin/build.js"
   },
   "author": "hxulin",
   "license": "MIT",
